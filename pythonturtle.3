@@ -1,0 +1,65 @@
+# Marleen Morkunaite
+# 08.10.24
+# harjutus 3
+
+import turtle
+"""
+Ülesanne 3.1: Tervitus
+Loo muutuja nimi, mis sisaldab kasutaja nime (string)
+Loo muutuja vanus, mis sisaldab kasutaja vanust (integer)
+Loo muutuja keskmine_hinne, mis sisaldab kasutaja keskmist hinnet (float)
+Trüki välja lause, mis ühendab kõik kolm muutujat, nt: “Karin, 18 aastat vana ja keskmine hinne on 4.7”
+"""
+nimi = "Üllar"
+vanus  = 18
+keskmine_hinne = 3.8
+print(nimi+", "+str(vanus)+" aastat vana ja keskmine hinne on "+str(keskmine_hinne))
+
+"""
+Ülesanne 3.2: Ostunimekiri
+Loo muutuja toode, mis sisaldab toote nime (string)
+Loo muutuja kogus, mis näitab, mitu toodet soovitakse osta (integer)
+Loo muutuja hind, mis näitab ühe toote hinda (float)
+Trüki välja lause, mis ühendab need andmed, nt: “Soovin porgandeid 3, mille tüki hind on 5 eurot.”
+"""
+toode = "porgandeid"
+kogus = 3
+hind = 5
+
+print("Soovin  "+str(toode)+" "+str(kogus)+", mille tüki hind on "+str(hind))
+
+"""
+Ülesanne 3.6: Python Turtle
+Loo muutuja kylje_pikkus, mis määrab kujundi külje pikkuse (täisarv)
+Loo muutuja kujundi_varv, mis määrab kujundi täitevärvi (string)
+Kasutades Turtle’i, joonista kõrvuti värvilised kujundid ruut ja kolmnurk, mis kasutab loodud muutujaid
+"""
+k = 100
+värv = "green"
+# ruut
+turtle.color(värv)
+turtle.fd(k)
+turtle.left(90)
+turtle.fd(k)
+turtle.left(90)
+turtle.fd(k)
+turtle.left(90)
+turtle.fd(k)
+turtle.left(90)
+
+# liigu
+turtle.penup()
+turtle.goto(k, 2.0)
+turtle.pendown()
+
+
+#kolmnurk
+
+turtle.fd(100)
+turtle.left(120)
+turtle.fd(100)
+turtle.left(120)
+turtle.fd(100)
+turtle.left(120)
+
+turtle.done()
