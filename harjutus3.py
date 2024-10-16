@@ -4,10 +4,7 @@
 
 #ülesanne 3.4
 
-raamatu = pealkiri+" = "+Kevade
-raamatu = autor+" = "+Oskar Luts
-raamat = ("raamatu = pealkiri, raamatu = autor")
-
+raamatu_pealkiri
 
 
 
