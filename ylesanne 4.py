@@ -1,6 +1,8 @@
 # 16.10.24
 #ülesanne 04
 
+
+"""
 import turtle
 # 5. Ringi pindala ja Turtle
 try: 
@@ -12,11 +14,7 @@ try:
     turtle.circle(r, 360)
 except:
     print("Tegid sisestamisel vea!")
-
-
-
-
-
+"""
 
 
 
@@ -31,11 +29,6 @@ try:
 except: 
     print("Tegid sisstamisel vea!")
 """
-
-
-
-
-
 
 
 """
@@ -65,6 +58,5 @@ b = int(input("Sisesta külg 2: "))
 p = 2 *(a + b)
 print(f"Aia kogupikkus on 18 meetrit.")
 """
-
 
 turtle.done()
