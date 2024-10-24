@@ -14,8 +14,29 @@ tooted={
 'banaanid': {'kogus': 23, 'hind': 1.29}
 }
 
+
+toode = "piim"
+toote_kogus = 10
+
+if toode in tooted:
+    if toote_kogus <= tooted [toode]["kogus"]
+        print("============ ARVE==========")
+        print(f"Toode: {toode}")
+        print (f"Hind: {tooted[toode]["hind"]} £")
+        print(f"Kogus: {toote_kogus} tk")
+        print(f"Summa: {round(toote_kogus))
+    else:
+        print(f"Soovitatud kogust pole. Meil on pakkuda {tooted[toode]["kogus"]} tk ")
+
+else:
+    print ("pole toodet")
+
+
 print(tooted)
 print(tooted ["piim"])
+print(tooted ["piim"]["hind"])
+
+
 
 
 
