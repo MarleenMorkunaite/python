@@ -5,18 +5,22 @@
 import turtle
 
 # Kujund 2
+'''
+d= 100
+turtle.speed(0)
 
 for i in range(2):
        turtle.lt(90)
 for i in range(2):
     turtle.lt(45)
-    turtle.fd(100)
+    turtle.fd(d)
     turtle.left(90)
-    turtle.fd(100)
+    turtle.fd(d)
     turtle.left(90)
-    turtle.fd(100)
+    turtle.fd(d)
     turtle.left(90)
-    turtle.fd(100)
+    turtle.fd(d)
+   '''
 
 
 # Kujund 6
