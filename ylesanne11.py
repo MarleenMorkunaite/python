@@ -9,13 +9,13 @@ import random
 # Mitu kujundit soovid joonistada? 5
 
 def viisnurk(k):
-    turtle.speed(0)
+    print("Joonistan viisnurga")
 
 
 
 
 def ring(k):
-    turtle.speed(0)
+    print("Joonistan ringi")
 
 
 
@@ -32,23 +32,42 @@ def ruut(k):
             turtle.lt(90)
 
 def suvaline(k):
-    
+    for i in range(k):
+        my_list = [viisnurk, ring, ruut]
+        random.choice(my_list)(1)
 
     
 
 
 
 print("-------------------Minu programm--------------")
-valik = int(input("1- viisnurk\n2 - ring\n3 - ruut\n4 - suvaline\nLisa valik (1-4): "))
-kujunditeArv = int(input("Mitu kujundit soovid joonistada? "))
-if valik == 1:
-    viisnurk()
-if valik == 2:
-    ring()
-if valik == 3:
-    ruut()
-else:
-    suvaline()
+
+
+loop = 1
+
+while loop==1:
+    try:
+        valik = int(input("1- viisnurk\n2 - ring\n3 - ruut\n4 - suvaline\nLisa valik (1-4): "))
+        kujunditeArv = int(input("Mitu kujundit soovid joonistada? "))
+    except: 
+        print("Game over")
+        turtle.bye()
+        loop = 0
+        break
+    if valik=="" or kujunditeArv=="":
+        print("Game over")
+        turtle.bye()
+        loop = 0
+        break
+
+    if valik == 1:
+        viisnurk(kujunditeArv)
+    if valik == 2:
+        ring(kujunditeArv)
+    if valik == 3:
+        ruut(kujunditeArv)
+    else:
+        suvaline(kujunditeArv)
 
 
 
